@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google Advanced Search — Frontend</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top-right navigation -->
+    <header class="top-nav">
+      <nav>
+        <a href="index.html">Google Search</a>
+        <a href="images.html">Image Search</a>
+      </nav>
+    </header>
+
+    <main class="advanced-wrap">
+      <h1 class="adv-title">Advanced Search</h1>
+      <form class="advanced-form" action="https://www.google.com/search" method="GET" aria-label="Google Advanced Search">
+        <!-- Google parameter names:
+             as_q   -> all these words
+             as_epq -> exact phrase
+             as_oq  -> any of these words
+             as_eq  -> none of these words -->
+        <div class="adv-row">
+          <label for="as_q">Find pages with… <span class="strong">all these words:</span></label>
+          <input id="as_q" name="as_q" type="text" />
+        </div>
+        <div class="adv-row">
+          <label for="as_epq">Find pages with… <span class="strong">this exact word or phrase:</span></label>
+          <input id="as_epq" name="as_epq" type="text" />
+        </div>
+        <div class="adv-row">
+          <label for="as_oq">Find pages with… <span class="strong">any of these words:</span></label>
+          <input id="as_oq" name="as_oq" type="text" />
+        </div>
+        <div class="adv-row">
+          <label for="as_eq">Find pages with… <span class="strong">none of these words:</span></label>
+          <input id="as_eq" name="as_eq" type="text" />
+        </div>
+
+        <div class="adv-actions">
+          <input class="btn btn-primary" type="submit" value="Advanced Search" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
