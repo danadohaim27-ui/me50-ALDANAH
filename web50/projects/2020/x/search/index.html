@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Top-right navigation -->
+
     <header class="top-nav">
       <nav>
         <a href="images.html">Image Search</a>
@@ -15,21 +15,17 @@
       </nav>
     </header>
 
-    <!-- Centered search area -->
     <main class="search-wrap">
       <h1 class="logo" aria-label="Google">Google</h1>
 
-      <!-- Standard search -->
       <form class="search-form" action="https://www.google.com/search" method="GET" role="search" aria-label="Google Search">
-        <!-- Name MUST be q for Google to receive the query -->
         <label class="sr-only" for="q">Search</label>
         <div class="input-row">
-          <input id="q" name="q" type="text" required placeholder="Search Google or type a URL" />
+          <input id="q" name="q" type="text" required placeholder="Search Google or type a URL" autofocus />
         </div>
 
         <div class="btn-row">
           <input class="btn" type="submit" value="Google Search" />
-          <!-- I'm Feeling Lucky: send btnI parameter just like Google does -->
           <input class="btn" type="submit" name="btnI" value="I'm Feeling Lucky" />
         </div>
       </form>

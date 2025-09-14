@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Top-right navigation -->
+
     <header class="top-nav">
       <nav>
         <a href="index.html">Google Search</a>
@@ -18,12 +18,11 @@
     <main class="search-wrap">
       <h1 class="logo images" aria-label="Google Images">Google Images</h1>
 
-      <!-- Image search: same /search endpoint with tbm=isch -->
       <form class="search-form" action="https://www.google.com/search" method="GET" role="search" aria-label="Google Image Search">
         <input type="hidden" name="tbm" value="isch" />
         <label class="sr-only" for="img-q">Image search</label>
         <div class="input-row">
-          <input id="img-q" name="q" type="text" required placeholder="Search images" />
+          <input id="img-q" name="q" type="text" required placeholder="Search images" autofocus />
         </div>
         <div class="btn-row">
           <input class="btn" type="submit" value="Image Search" />
